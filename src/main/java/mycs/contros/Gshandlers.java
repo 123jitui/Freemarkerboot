@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Locale;
+import java.util.*;
 import java.util.Map;
 
 
@@ -31,7 +31,7 @@ public class Gshandlers {
 
 
 	@RequestMapping(value="/gsquery",produces ="text/html;charset=utf-8",method=RequestMethod.GET)
-	public String query(Map<String, Object> map,String pageNo, String pageSize) {
+	public String query(Map<String, Object> map, String pageNo, String pageSize) {
 
 
 
@@ -57,7 +57,7 @@ public class Gshandlers {
 	}
 
 	@RequestMapping(value="/gsxiaye",produces ="text/html;charset=utf-8",method=RequestMethod.GET)
-	public String xiaye(Map<String, Object> map,Locale locale, String pageNo, String pageSize) {
+	public String xiaye(Map<String, Object> map, Locale locale, String pageNo, String pageSize) {
 
 		map.put("sizes",Integer.valueOf(pageSize));
 		map.put("limits",Integer.valueOf(pageNo)+1);

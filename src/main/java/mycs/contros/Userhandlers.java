@@ -40,6 +40,15 @@ public class 	Userhandlers {
 	private Gsservice gsDao;
 
 
+	@RequestMapping(value = "/cs",method = RequestMethod.GET)
+	@ResponseBody
+	public String csy(){
+
+		return "css";
+	}
+
+
+
 
 
 
