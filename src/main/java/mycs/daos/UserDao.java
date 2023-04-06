@@ -57,26 +57,26 @@ public class UserDao {
 //		return pageNo;
 //	}
 //
-//	public int sums(int pageSize){
-//
-//// 		session = getSession();
-//
-//
-//// 		Object count = session.createQuery("select count(*) from User").uniqueResult();
-//
-//		Object count = userMapper.sums(pageSize);
-//
-//		int a  = Integer.parseInt(count.toString());
-//		int sum = 0;
-//		if(a % pageSize == 0){
-//			sum = a / pageSize;
-//		}else {
-//			sum = a / pageSize;
-//			sum++;
-//		}
-//
-//		return sum;
-//	}
+	public int sums(int pageSize){
+
+// 		session = getSession();
+
+
+// 		Object count = session.createQuery("select count(*) from User").uniqueResult();
+
+		Object count = userMapper.sums(pageSize);
+
+		int a  = Integer.parseInt(count.toString());
+		int sum = 0;
+		if(a % pageSize == 0){
+			sum = a / pageSize;
+		}else {
+			sum = a / pageSize;
+			sum++;
+		}
+
+		return sum;
+	}
 ////
 ////
 ////

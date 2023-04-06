@@ -20,39 +20,39 @@ public class Userservice {
         return userDao.queryUser(pageNo,pageSize);
     }
 
-    public int qushangye(int pageNo, int pageSize) {
-        return userDao.qushangye(pageNo,pageSize);
-    }
-
+//    public int qushangye(int pageNo, int pageSize) {
+//        return userDao.qushangye(pageNo,pageSize);
+//    }
+//
     public int sums(int pageSize) {
         return userDao.sums(pageSize);
     }
-
-    public void delete(int id) {
-        userDao.delete(id);
-    }
-
-    public void update(User user) {
-        userDao.update(user);
-    }
-
-    public void add(User user) {
-        userDao.add(user);
-    }
-
-    public User queryid(int id) {
-        return userDao.queryid(id);
-    }
-
-    public void addlist(List<User> user) {
-
-        userDao.addlist(user);
-    }
-
-    public List<User> querysy() {
-        List<User> user  = userDao.querysy();
-        return user;
-    }
+//
+//    public void delete(int id) {
+//        userDao.delete(id);
+//    }
+//
+//    public void update(User user) {
+//        userDao.update(user);
+//    }
+//
+//    public void add(User user) {
+//        userDao.add(user);
+//    }
+//
+//    public User queryid(int id) {
+//        return userDao.queryid(id);
+//    }
+//
+//    public void addlist(List<User> user) {
+//
+//        userDao.addlist(user);
+//    }
+//
+//    public List<User> querysy() {
+//        List<User> user  = userDao.querysy();
+//        return user;
+//    }
 
 
 }
