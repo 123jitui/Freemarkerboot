@@ -10,10 +10,11 @@ import java.util.List;
 public interface UserMapper {
 
 
-	@Select("select * from users limit #{pageNo},#{pageSize}")
+	@Select("select * from user limit #{pageNo},#{pageSize}")
 	public List<User> queryUser(@Param("pageNo") int pageNo, @Param("pageSize")int pageSize);
-	
-//	public int sums(int pageSize);
+
+	@Select("select count(*) from user")
+	public int sums(int pageSize);
 //
 //	public int qushangye(@Param("pageNo")int pageNo,@Param("pageSize")int pageSize);
 //
